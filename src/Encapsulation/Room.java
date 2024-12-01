@@ -7,6 +7,7 @@ public class Room {
     private double cancellationFee;
     private String status;
 
+    // Constructor
     public Room(int roomNumber, String type, double pricePerNight, double cancellationFee, String status) {
         this.roomNumber = roomNumber;
         this.type = type;
@@ -15,21 +16,34 @@ public class Room {
         this.status = status;
     }
 
-    // Гетъри и сетъри
+    // Getter and Setter methods
     public int getRoomNumber() {
         return roomNumber;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
+    public String getType() {
+        return type;  // This method was missing and is needed to fix the error
+    }
+
+    public double getPricePerNight() {
+        return pricePerNight;
+    }
+
+    public double getCancellationFee() {
+        return cancellationFee;
     }
 
     public String getStatus() {
         return status;
     }
 
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    // Override toString method for easy display of room information
+    @Override
     public String toString() {
         return "Room " + roomNumber + " (" + type + ") - Price: " + pricePerNight + " - Status: " + status;
     }
 }
-
