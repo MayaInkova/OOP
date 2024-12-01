@@ -3,11 +3,12 @@ package Encapsulation;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
 
 public class RoomManager {
     private  static final String FILE_NAME = "rooms.csv";
-    private List<Room> rooms;
+    private final List<Room> rooms;
 
     public RoomManager() {
         rooms = new ArrayList<>();
