@@ -7,7 +7,7 @@ public class Room {
     private double cancellationFee;
     private String status;
 
-    // Constructor
+    // Constructor to initialize the Room object
     public Room(int roomNumber, String type, double pricePerNight, double cancellationFee, String status) {
         this.roomNumber = roomNumber;
         this.type = type;
@@ -16,27 +16,32 @@ public class Room {
         this.status = status;
     }
 
-    // Getter and Setter methods
+    // Getter for roomNumber
     public int getRoomNumber() {
         return roomNumber;
     }
 
+    // Getter for type of room (e.g., Deluxe, Single, etc.)
     public String getType() {
-        return type;  // This method was missing and is needed to fix the error
+        return type;
     }
 
+    // Getter for price per night
     public double getPricePerNight() {
         return pricePerNight;
     }
 
+    // Getter for cancellation fee
     public double getCancellationFee() {
         return cancellationFee;
     }
 
+    // Getter for status (available, booked, etc.)
     public String getStatus() {
         return status;
     }
 
+    // Setter for status (used when updating room status to booked/available)
     public void setStatus(String status) {
         this.status = status;
     }
