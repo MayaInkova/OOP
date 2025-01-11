@@ -1,19 +1,21 @@
 package InheritancentEndInterfaces;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class ECommerceApp {
     public static void main(String[] args) {
         InventoryManager inventoryManager = new InventoryManager();
         PaymentProcessor paymentProcessor = new PaymentProcessor();
         Scanner scanner = new Scanner(System.in);
+        Order order = new Order(); // Добавено за да е достъпна в case 5
+
 
         System.out.println("Добре дошли в E-commerce Console Application!");
         displayMenu();
 
         boolean isRunning = true;
         while (isRunning) {
-            System.out.print("Въведете команда (1-4): ");
+            System.out.print("Въведете команда (1-5): ");
             int choice = scanner.nextInt();
             scanner.nextLine(); // Изчистване на буфера
 
@@ -38,7 +40,7 @@ public class ECommerceApp {
                     break;
                 case 3:
                     // Започване на поръчка
-                    Order order = new Order();
+                    order  = new Order();
                     boolean addingItems = true;
                     while (addingItems) {
                         System.out.println("Въведете име на артикул за поръчка: ");
@@ -51,17 +53,31 @@ public class ECommerceApp {
                         addingItems = scanner.nextLine().equalsIgnoreCase("yes");
                     }
                     System.out.println("Обща сума: " + order.calculateTotal());
-                    System.out.println("Плащане успешно завършено.");
                     break;
                 case 4:
                     isRunning = false;
                     System.out.println("Изход от приложението.");
                     break;
+                case 5:
+                    System.out.println("Изберете метод на плащане (1. Кредитна карта, 2. PayPal): ");
+                    int paymentChoice = scanner.nextInt();
+                    scanner.nextLine();
+                    if (paymentChoice == 1) {
+                        System.out.println("Въведете номер на кредитната карта: ");
+                        String cardNumber = scanner.nextLine();
+                        paymentProcessor.processCreditCardPayment(order.calculateTotal(), cardNumber);
+                    } else if (paymentChoice == 2) {
+                        System.out.println("Въведете PayPal акаунт: ");
+                        String paypalAccount = scanner.nextLine();
+                        paymentProcessor.processPayPalPayment(order.calculateTotal(), paypalAccount);
+                    } else {
+                        System.out.println("Невалиден метод на плащане.");
+                    }
+                    break;
                 default:
                     System.out.println("Невалидна команда. Моля, опитайте отново.");
             }
         }
-
     }
 
     // Показване на менюто
@@ -71,6 +87,6 @@ public class ECommerceApp {
         System.out.println("2. Добавяне на артикул");
         System.out.println("3. Създаване на поръчка");
         System.out.println("4. Изход");
+        System.out.println("5. Обработка на плащане");
     }
 }
-
