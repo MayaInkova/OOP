@@ -36,8 +36,8 @@ public class Box<T> {
         System.out.println(strBox);
 
         // Кутия за потребителски обект
-        Box<Person> personBox = new Box<>();
-        personBox.setItem(new Person("Алис", 25));
+        Box<Personn> personBox = new Box<>();
+        personBox.setItem(new Personn("Алис", 25));
         System.out.println(personBox);
     }
 }
