@@ -11,7 +11,7 @@ public class SolidExample {
         ReportService service = new ReportService(pdfExporter);
         service.exportReport(report);
 
-        // Демонстрация на замяна на зависимост
+        // Демонстрация на замяна на зависимостта
         ReportExporter csvExporter = new CSVExporter();
         service = new ReportService(csvExporter);
         service.exportReport(report);
