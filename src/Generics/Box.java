@@ -25,17 +25,17 @@ public class Box<T> {
     public static void main(String[] args) {
 
 
-        // Кутия за съхранение на цели числа
+        //  съхранение на цели числа
         Box<Integer> intBox = new Box<>();
         intBox.setItem(123);
         System.out.println(intBox);
 
-        // Кутия за съхранение на низове
+        //   съхранение на низове
         Box<String> strBox = new Box<>();
         strBox.setItem("Здравей Generics!");
         System.out.println(strBox);
 
-        // Кутия за потребителски обект
+        //потребителски обект
         Box<Personn> personBox = new Box<>();
         personBox.setItem(new Personn("Алис", 25));
         System.out.println(personBox);
