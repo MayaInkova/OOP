@@ -24,7 +24,7 @@ public class CharacterFrequency {
         }
 
         // Извеждане на честотата на символите в конзолата
-        System.out.println("Честота на символите в файла:");
+        System.out.println("Честота на символите във файла:");
         for (Map.Entry<Character, Integer> entry : frequencyMap.entrySet()) {
             System.out.println("Символ: '" + entry.getKey() + "' -> " + entry.getValue());
         }
