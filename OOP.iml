@@ -5,7 +5,41 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
+    <content url="file://D:/apache-poi-src-5.4.0-20241229">
+      <sourceFolder url="file://D:/apache-poi-src-5.4.0-20241229/jenkins" isTestSource="false" />
+      <sourceFolder url="file://D:/apache-poi-src-5.4.0-20241229/osgi/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://D:/apache-poi-src-5.4.0-20241229/osgi/src/test/java" isTestSource="false" />
+      <sourceFolder url="file://D:/apache-poi-src-5.4.0-20241229/poi-examples/src/main/groovy" isTestSource="false" />
+      <sourceFolder url="file://D:/apache-poi-src-5.4.0-20241229/poi-examples/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://D:/apache-poi-src-5.4.0-20241229/poi-examples/src/main/java9" isTestSource="false" />
+      <sourceFolder url="file://D:/apache-poi-src-5.4.0-20241229/poi-examples/src/main/ruby/java" isTestSource="false" />
+      <sourceFolder url="file://D:/apache-poi-src-5.4.0-20241229/poi-examples/src/test/java" isTestSource="false" />
+      <sourceFolder url="file://D:/apache-poi-src-5.4.0-20241229/poi-excelant/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://D:/apache-poi-src-5.4.0-20241229/poi-excelant/src/main/java9" isTestSource="false" />
+      <sourceFolder url="file://D:/apache-poi-src-5.4.0-20241229/poi-excelant/src/poi-ant-contrib/java" isTestSource="false" />
+      <sourceFolder url="file://D:/apache-poi-src-5.4.0-20241229/poi-excelant/src/test/java" isTestSource="false" />
+      <sourceFolder url="file://D:/apache-poi-src-5.4.0-20241229/poi-excelant/src/test/java9" isTestSource="false" />
+      <sourceFolder url="file://D:/apache-poi-src-5.4.0-20241229/poi-integration/src/test/java" isTestSource="false" />
+      <sourceFolder url="file://D:/apache-poi-src-5.4.0-20241229/poi-integration/src/test/java9" isTestSource="false" />
+      <sourceFolder url="file://D:/apache-poi-src-5.4.0-20241229/poi-ooxml-full/src/main/java9" isTestSource="false" />
+      <sourceFolder url="file://D:/apache-poi-src-5.4.0-20241229/poi-ooxml-lite-agent/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://D:/apache-poi-src-5.4.0-20241229/poi-ooxml-lite-agent/src/main/java9" isTestSource="false" />
+      <sourceFolder url="file://D:/apache-poi-src-5.4.0-20241229/poi-ooxml-lite/src/main/java9" isTestSource="false" />
+      <sourceFolder url="file://D:/apache-poi-src-5.4.0-20241229/poi-ooxml/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://D:/apache-poi-src-5.4.0-20241229/poi-ooxml/src/main/java9" isTestSource="false" />
+      <sourceFolder url="file://D:/apache-poi-src-5.4.0-20241229/poi-ooxml/src/test/java" isTestSource="false" />
+      <sourceFolder url="file://D:/apache-poi-src-5.4.0-20241229/poi-ooxml/src/test/java9" isTestSource="false" />
+      <sourceFolder url="file://D:/apache-poi-src-5.4.0-20241229/poi-scratchpad/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://D:/apache-poi-src-5.4.0-20241229/poi-scratchpad/src/main/java9" isTestSource="false" />
+      <sourceFolder url="file://D:/apache-poi-src-5.4.0-20241229/poi-scratchpad/src/test/java" isTestSource="false" />
+      <sourceFolder url="file://D:/apache-poi-src-5.4.0-20241229/poi-scratchpad/src/test/java9" isTestSource="false" />
+      <sourceFolder url="file://D:/apache-poi-src-5.4.0-20241229/poi/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://D:/apache-poi-src-5.4.0-20241229/poi/src/main/java9" isTestSource="false" />
+      <sourceFolder url="file://D:/apache-poi-src-5.4.0-20241229/poi/src/test/java" isTestSource="false" />
+      <sourceFolder url="file://D:/apache-poi-src-5.4.0-20241229/poi/src/test/java9" isTestSource="false" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="groovy-5.0.0-alpha-1" level="project" />
   </component>
 </module>
